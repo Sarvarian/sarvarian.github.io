@@ -3,14 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./styles.css" />
-	<title>Mohammad Jamal Sarvarian's Portfolio</title>
+	<title> Sarvarian </title>
 </head>
 <body draggable="false">
-<h1>Mohammad Jamal Sarvarian's Portfolio</h1>
+
+<h1> Mohammad Jamal Sarvarian </h1>
 <hr/>
-<h2>About Me</h2>
-<p> Hello my dear friends.       </p>
-<p> I program game technologies. </p>
+
+<div class="goto-block">
+	<a class="goto-text" href="#about_me"> goto about_me; </a>
+	<a class="goto-text" href="#portfolio" hidden> goto portfolio; </a>
+</div>
+
+<div class="page-block" id="about_me">
+	<h2 class="begin-title"> Begin About Me </h2>
+
+	<div class="verse-block">
+		<h3 class="verse-title" hidden> Verse 1 </h3>
+		<p class="line"> Hello my dear friends. </p>
+		<p class="line"> I program game technologies. </p>
+	</div>
+
+	<h2 class="end-title"> End About Me </h2>
+</div>
+
+<div class="goto-block">
+	<a class="goto-text" href="#about_me"> goto about_me; </a>
+	<a class="goto-text" href="#portfolio" hidden> goto portfolio; </a>
+</div>
+
+<div class="page-block" id="portfolio" hidden>
+	<h2 class="begin-title"> Begin Portfolio </h2>
+	<div class="verse-block">
+		<h3 class="verse-title" hidden> Verse 1 </h3>
+	</div>
+	<h2 class="end-title"> End Portfolio </h2>
+</div>
+
+<div class="goto-block" hidden>
+	<a class="goto-text" href="#about_me"> goto about_me; </a>
+	<a class="goto-text" href="#portfolio" hidden> goto portfolio; </a>
+</div>
 
 </body>
 </html>
