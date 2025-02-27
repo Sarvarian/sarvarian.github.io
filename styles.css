@@ -12,6 +12,10 @@ hr {
     border-style: solid;
 }
 
+ol, ul {
+    color: #a084b8;
+}
+
 p {
     padding-left: 2em;
     text-indent: -2em;
@@ -24,4 +28,4 @@ a {
     color: #a89890;
 }
 
-/* colors: 402840 a89890 d2cac6  */
+/* colors: 402840 a89890 d2cac6 484060 a084b8 */
