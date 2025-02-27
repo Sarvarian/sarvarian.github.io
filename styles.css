@@ -19,4 +19,9 @@ p {
     margin-bottom: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #a89890;
+}
+
 /* colors: 402840 a89890 d2cac6  */
