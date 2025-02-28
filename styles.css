@@ -39,18 +39,23 @@ hr {
 .verse-container {
     display: block;
     width: 100%;
+    margin-top: 3em;
 }
 
 .verse-block {
     display: inline-block;
     max-width: 40em;
-    margin: 0;
-    padding: 0;
     vertical-align: top;
+    margin-bottom: 3em;
+}
+
+.verse-title {
+    margin-top: 0;
 }
 
 .end-title {
     display: block;
+    margin-top: 0;
 }
 
 ol, ul {
