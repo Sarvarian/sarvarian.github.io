@@ -1,11 +1,10 @@
 
 # About Me
 
-## Verse 0
+## Verse 1
 
-Hello, my dear friends!
+Hello my dear friends.
 
-My name is Mohammad Jamal Sarvarian
-and I program game technologies.
+I program game technologies.
 
 
