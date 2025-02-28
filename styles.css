@@ -36,9 +36,21 @@ hr {
     margin-top: 3em;
 }
 
+.verse-container {
+    display: block;
+    width: 100%;
+}
+
 .verse-block {
     display: inline-block;
     max-width: 40em;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.end-title {
+    display: block;
 }
 
 ol, ul {
