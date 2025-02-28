@@ -10,7 +10,9 @@
 <h1> Mohammad Jamal Sarvarian </h1>
 
 <div class="goto-block">{% for page in pages %}{{ newline }}{{ tab }}<a class="goto-text" href="#{{ page['id'] }}"{% if page['verses']|length < 1 %} hidden{% endif %}> goto {{ page['id'] }}; </a>{% endfor %}
-	<hr/>
+    <div class="page-break">
+        <hr/>
+	</div>
 </div>
 {% for page in pages %}
 <div class="page-block" id="{{ page['id'] }}"{% if page['verses']|length < 1 %} hidden{% endif %}>
@@ -24,7 +26,9 @@
 </div>
 
 <div class="goto-block"{% if page['verses']|length < 1 %} hidden{% endif %}>{% for page in pages %}{{ newline }}{{ tab }}<a class="goto-text" href="#{{ page['id'] }}"{% if page['verses']|length < 1 %} hidden{% endif %}> goto {{ page['id'] }}; </a>{% endfor %}
-	<hr/>
+    <div class="page-break">
+        <hr/>
+	</div>
 </div>
 {% endfor %}
 </body>
