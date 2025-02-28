@@ -1,15 +1,36 @@
 
 html {
-    background: #402840;
-    color: #d2cac6;
+    background: #402840 !important;
+    color: #d2cac6 !important;
     font-family: monospace;
     font-size: 1.1em;
 }
 
+body {
+    padding: 1em 5em;
+}
+
 hr {
+    /*display: none;*/
     border-color: #a89890;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
+    position: absolute;
+    left: 5.5em;
+    width: 39em;
+}
+
+.verse-block {
+    display: inline-block;
+    max-width: 40em;
+}
+
+.begin-title {
+    margin-bottom: 0;
+}
+
+.page-block {
+    margin-top: 3em;
 }
 
 ol, ul {
