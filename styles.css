@@ -13,16 +13,19 @@ body {
 hr {
     /*display: none;*/
     border-color: #a89890;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
-    position: absolute;
-    left: 5.5em;
-    width: 39em;
 }
 
-.verse-block {
-    display: inline-block;
-    max-width: 40em;
+.page-break {
+    display: block;
+    position: relative;
+    left: .25em;
+    max-width: 39.5em;
+}
+
+.page-break > hr {
+    border-width: 1px;
 }
 
 .begin-title {
@@ -31,6 +34,11 @@ hr {
 
 .page-block {
     margin-top: 3em;
+}
+
+.verse-block {
+    display: inline-block;
+    max-width: 40em;
 }
 
 ol, ul {
