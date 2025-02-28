@@ -16,7 +16,11 @@ ol, ul {
     color: #a084b8;
 }
 
-p, .line {
+span.line {
+    display: block;
+}
+
+.line {
     padding-left: 2em;
     text-indent: -2em;
     margin: 0;
