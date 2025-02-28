@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #402840; color: #d2cac6">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./styles.css" />
+	<title> Sarvarian </title>
+</head>
+<body draggable="false">
+
+<h1> Mohammad Jamal Sarvarian </h1>
+
+<div class="goto-block">{% for page in pages %}{{ newline }}{{ tab }}<a class="goto-text" href="#{{ page['id'] }}"{% if page['verses']|length < 1 %} hidden{% endif %}> goto {{ page['id'] }}; </a>{% endfor %}
+	<hr/>
+</div>
+{% for page in pages %}
+<div class="page-block" id="{{ page['id'] }}"{% if page['verses']|length < 1 %} hidden{% endif %}>
+	<h2 class="begin-title"> Begin {{ page['title'] }} </h2>
+{% for verse in page['verses'] %}
+	<div class="verse-block">
+		<h3 class="verse-title"{% if page['verses']|length < 2 %} hidden{% endif %}> {{ verse['title'] }} </h3>{% for line in verse['lines'] %}{{ newline }}{{ tab }}{{ tab }}<p class="line"> {{ line }} </p>{% endfor %}
+	</div>
+{% endfor %}
+	<h2 class="end-title"> End {{ page['title'] }} </h2>
+</div>
+
+<div class="goto-block"{% if page['verses']|length < 1 %} hidden{% endif %}>{% for page in pages %}{{ newline }}{{ tab }}<a class="goto-text" href="#{{ page['id'] }}"{% if page['verses']|length < 1 %} hidden{% endif %}> goto {{ page['id'] }}; </a>{% endfor %}
+	<hr/>
+</div>
+{% endfor %}
+</body>
+</html>
+
+<!-- colors: 402840 a89890 d2cac6 -->
