@@ -16,16 +16,22 @@ ol, ul {
     color: #a084b8;
 }
 
-p {
+p, .line {
     padding-left: 2em;
     text-indent: -2em;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: #a89890;
+    border-color: #a89890;
+    border-width: 0;
+}
+
+a:hover {
+    border-bottom-width: 1px;
+    border-style: solid;
 }
 
 /* colors: 402840 a89890 d2cac6 484060 a084b8 */
