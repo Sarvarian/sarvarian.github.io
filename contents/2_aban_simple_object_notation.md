@@ -39,7 +39,7 @@ right after start of the document,
 or the file.
 
 Preferably no space or new line
-before it
+before it.
 
 And certainly no content or token or
 directive before it.
@@ -56,5 +56,30 @@ directive omitted, default should be
 is a superset of ASCII encoding,
 implementations, may choose 'abanutf8'
 as default.
+
+# Verse 3 Document Purpose
+
+As any aban Language variation,
+the first token of any document
+should be the document purpose,
+with the exception of format directive
+
+In case of omission of purpose directive,
+fault tolerance system may or may not
+deduce the purpose of the document by
+its content.
+
+But it is strongly suggested to include
+the document purpose at the start of
+every document.
+
+For a simple ASON document, purpose
+document may be 'ason' or
+'aban simple object notation'.
+
+Verse 4 Content
+
+
+
 
 
