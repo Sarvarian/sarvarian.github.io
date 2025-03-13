@@ -14,6 +14,16 @@ def read_line(array):
 			res += ' '
 		elif item['t'] == 'SoftBreak':
 			res += ' '
+		elif item['t'] == 'Quoted':
+			quote_mark = item['c'][0]['t']
+			item_item = item['c'][1][0]
+			string = item_item['c']
+			if quote_mark == 'SingleQuote':
+				res += '\'' + string + '\''
+			elif quote_mark == 'DoubleQuote':
+				res += '\"' + string + '\"'
+			else:
+				raise Exception('Unknown type')
 		else:
 			raise Exception('Unknown type')
 	return res

@@ -57,7 +57,7 @@ is a superset of ASCII encoding,
 implementations, may choose 'abanutf8'
 as default.
 
-# Verse 3 Document Purpose
+## Verse 3 Document Purpose
 
 As any aban Language variation,
 the first token of any document
@@ -77,7 +77,8 @@ For a simple ASON document, purpose
 document may be 'ason' or
 'aban simple object notation'.
 
-Verse 4 Content
+## Verse 4 Content
+
 
 
 
