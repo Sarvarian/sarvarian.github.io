@@ -337,8 +337,28 @@ Now what about multiple nodes in
 one line? You may ask! Example follows:
 
 ```
-
+person1 'Sara' 23
+person2 'Ali'  25
 ```
+
+The first node in the line consider
+the top node and every other node
+that came after it in the same line
+will be directly linked to the first
+node as its sub node. So, in example
+above, you have string 'Sara' and
+numeric 23 directly linked
+to token 'person1'. More advanced
+linking methods may overrule this,
+and we will talk about this in the
+future.
+
+So, as some basic linking rules,
+remember the line division rule,
+and the fact that nodes in
+the same line all get linked
+as sub nodes to the first node
+in that line.
 
 ## [11] Space Linking
 
