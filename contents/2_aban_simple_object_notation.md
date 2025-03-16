@@ -199,7 +199,7 @@ The quotation mark that started the string
 maybe escaped using a forward slash, '\\'.
 something like example below:
 
-```ason
+```
 'single quoted \' string'
 "double quoted \" string'
 ```
@@ -210,7 +210,7 @@ symbol exactly started the string lets say
 by the specification we have 3 escape 
 characters as follows:
 
-```ason
+```
 'single quoted \' escape'
 'double quoted \" esacpe'
 'and one forward slash \\'
@@ -241,7 +241,7 @@ Annotated strings are strings annotated
 with a token right before their quotation
 mark. Something like following examples:
 
-```ason
+```
 annotation'my string is annoatated'
 another"Another annoated string"
 hex'ff00'
@@ -294,16 +294,57 @@ graph.
 Beyond nodes, there are 3 different
 method to connet nodes togather
 and eventually shape a graph.
+We call them linking methods.
 
 First method is spacing.
 
 Second method is using brackets.
 
-Third method is 
+Third method is commas and semicolons.
 
 You can use them, avoid them, or
 mix these 3 different methods as
 you please.
 
-## [10] 
+## [10] Basic Linking
+
+For start, let us consider the most
+basic form of linking. This essentially
+is a part of spacing method, but I
+talk about spacing method in detail
+in another section.
+
+Considering an ASON file, or an ASON
+document, as the root node of our graph.
+Each Line is node. Following example:
+
+```
+firstNode
+'secondNode'
+33
+```
+
+As simple as that. You divide nodes
+into lines. Empty lines will get
+and should get ignored. You can
+have as many empty line in your
+document as you want. Unless specify
+otherwise by an application and
+its parser. Also, this may or may not
+get overrule by other linking methods!
+
+Now what about multiple nodes in
+one line? You may ask! Example follows:
+
+```
+
+```
+
+## [11] Space Linking
+
+## [12] Bracket Linking
+
+## [13] Comma and Semicolon Linking
+
+
 
