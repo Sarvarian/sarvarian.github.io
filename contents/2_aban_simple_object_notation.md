@@ -85,8 +85,8 @@ An ASON document is like a graph.
 The file is the root, each token or
 string in the file is like a node.
 
-There are 3 types of nodes: tokens,
-strings, and numbers.
+There are 3 types of nodes: tokens, 
+numerics and strings.
 
 Unlike JSON and other serialization
 languages, ASON specification is not
@@ -117,12 +117,71 @@ depend on document format, checkout Document
 Format Directive.
 
 For example 'abanascii' only allow use of
-ASCII english letters and numbers and
-underline, '_', to be used for tokens.
+ASCII english letters, numbers, '_underline',
+and '.period' to be used for tokens.
 Plus and stated before, no number as the
 first character of a token and no space.
 
-## [6] Strings
+## [6] Numerics
+
+Numerics are just numbers. Kind of like
+tokens but just numbers. They start
+with numbers, no space, and supposedly
+no letter or other characters.
+
+As stated before ASON do not assume type.
+Numerics here are just string of numeric
+characters/symbols. There types are
+subjected to the parser and semantic
+of the application.
+
+But as some extra features, parsers
+may support some extra features for
+numerics, like having a period mark in
+the middle of numeric strings to
+specify that the number has fractions,
+or underline, '_',  in between digits
+to make long numbers more readable but
+get ignore by the parser, or some other
+formats to define different floating point
+values or maybe some other types that has
+numeric representations. The important
+point about ASON numerics is that they
+start with numeric symbols and like
+tokens end with white spaces.
+
+I do not specify any extra feature about
+numerics in this specification. Any more
+feature, like the examples in the previous
+paragraph, are subjected to the parser
+reading the document and may vary.
+Sorry for inconvenience. I know this would
+cause incompatibility among parsers.
+
+But for one, you are writing ASON with
+semantic of a specific application in
+mind, so you can take parser of the
+application into consideration while
+authoring ASON documents.
+
+For second, each parser, given some time,
+will start adding more and more features,
+more or less, eventually. So, even if
+there is no standard, a common ground
+will be reached, eventually.
+
+If you are really concern about standard
+of numeric parsing of ASON, start a committee
+and standardise new features every 3 years,
+until no parser can keep up with the standard!
+
+So, as far as I and this specification is
+concern, numerics are numbers, no fancy feature.
+Keep it simple and allow any newbie programmer
+be able to write an ASON parser in a weekend.
+(I'm taking about myself here!)
+
+## [7] Strings
 
 Strings may start with 'single quote' or
 "double quote" character and end when parser
@@ -172,10 +231,6 @@ parsing and encoding of the content inside
 strings are responsibilities of
 the application using ASON and not ASON
 as a language.
-
-## [7] Numbers
-
-
 
 ## [8] Annotated Strings
 
