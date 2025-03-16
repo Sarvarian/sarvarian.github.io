@@ -95,10 +95,9 @@ types like boolean or integers define
 by the specification.
 
 Any type inference is application specific
-and may define by the application(s) using
-ASON for data serialization.
+and may define by each application.
 ASON specification is only concern with how
-to produce and parse information in a cohesive
+to author and parse information in a cohesive
 language. Semantic of information is not
 responsibility of ASON specification.
 
@@ -242,7 +241,7 @@ Annotated strings are strings annotated
 with a token right before their quotation
 mark. Something like following examples:
 
-```
+```ason
 annotation'my string is annoatated'
 another"Another annoated string"
 hex'ff00'
@@ -280,5 +279,8 @@ the application using the parser explicitly
 set the parser to ignore annotated strings,
 or enable this specific feature.
 
+## [9] ASON Graph
 
-
+When you author an ASON document,
+essentially you are describing a
+graph.
