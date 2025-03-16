@@ -112,8 +112,8 @@ numbers but not as the first character.
 No space is allowed.
 
 What characters and letters are allowed are
-depend on document format, checkout Document
-Format Directive.
+depend on document format, checkout [Document
+Format Directive](#2-document-format-directive).
 
 For example 'abanascii' only allow use of
 ASCII english letters, numbers, '_underline',
@@ -284,3 +284,26 @@ or enable this specific feature.
 When you author an ASON document,
 essentially you are describing a
 graph.
+
+We talk about nodes of the graph
+before. Tokens, numerics, and
+strings are all different ways
+to describe a node in an ASON
+graph.
+
+Beyond nodes, there are 3 different
+method to connet nodes togather
+and eventually shape a graph.
+
+First method is spacing.
+
+Second method is using brackets.
+
+Third method is 
+
+You can use them, avoid them, or
+mix these 3 different methods as
+you please.
+
+## [10] 
+
