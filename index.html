@@ -62,14 +62,14 @@
 	<h2 class="begin-title"> Begin ASON </h2>
 	<div class="verse-container">
 		<div class="verse-block">
-			<h3 class="verse-title"> Verse 0 What is ASON </h3>
+			<h3 class="verse-title"> 0: What is ASON </h3>
 			<p class="line"> Aban Simple Object Notation </p>
 			<p class="line"> This a simple serialization format for aban language system. </p>
 			<p class="line"> Something like JSON or YAML. </p>
 			<p class="line"> Despite the name, it is not spouse to be a superset of JSON, even though implementations can be compatible with JSON. </p>
 		</div>
 		<div class="verse-block">
-			<h3 class="verse-title"> Verse 1 Grand Struction of a Document </h3>
+			<h3 class="verse-title"> [1] Grand Struction of a Document </h3>
 			<p class="line"> A document, lets say it starts with opening of a file, may have 3 or 4 thing. </p>
 			<p class="line"> First document format directive. </p>
 			<p class="line"> Second document purpose directive. </p>
@@ -77,7 +77,7 @@
 			<p class="line"> Forth a document terminator in order to start a new document in the same file. Like YAML. </p>
 		</div>
 		<div class="verse-block">
-			<h3 class="verse-title"> Verse 2 Document Format Directive </h3>
+			<h3 class="verse-title"> [2] Document Format Directive </h3>
 			<p class="line"> This is optional, and may omit. </p>
 			<p class="line"> This directive will come as token right after start of the document, or the file. </p>
 			<p class="line"> Preferably no space or new line before it. </p>
@@ -87,14 +87,14 @@
 			<p class="line"> By specification, if document format directive omitted, default should be 'abanascii', but because UTF8 encoding is a superset of ASCII encoding, implementations, may choose 'abanutf8' as default. </p>
 		</div>
 		<div class="verse-block">
-			<h3 class="verse-title"> Verse 3 Document Purpose </h3>
+			<h3 class="verse-title"> [3] Document Purpose </h3>
 			<p class="line"> As any aban Language variation, the first token of any document should be the document purpose, with the exception of format directive </p>
 			<p class="line"> In case of omission of purpose directive, fault tolerance system may or may not deduce the purpose of the document by its content. </p>
 			<p class="line"> But it is strongly suggested to include the document purpose at the start of every document. </p>
 			<p class="line"> For a simple ASON document, purpose document may be 'ason' or 'aban'. </p>
 		</div>
 		<div class="verse-block">
-			<h3 class="verse-title"> Verse 4 Content </h3>
+			<h3 class="verse-title"> [4] Content </h3>
 		</div>
 	</div>
 	<h2 class="end-title"> End ASON </h2>
