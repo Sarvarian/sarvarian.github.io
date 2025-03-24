@@ -354,13 +354,22 @@ and we will talk about this in the
 future.
 
 So, as some basic linking rules,
-remember the line division rule,
-and the fact that nodes in
+just remember the line division
+rule, and the that nodes in
 the same line all get linked
 as sub nodes to the first node
 in that line.
 
 ## [11] Space Linking
+
+In extension to those basic linking
+rules, as the first linking method
+we use space and indentation to
+describe node hierarchies.
+
+If you know languages like python or
+haskell, indentation rules are almost
+similar.
 
 ## [12] Bracket Linking
 
