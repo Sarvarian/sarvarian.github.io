@@ -9,15 +9,12 @@ under aban language family.
 It describes the syntax of most
 if not all aban languages.
 
-AGN is all about a simple syntax
-that you can use to describe a
-graph in a simple text file
-document.
+AGN is all about syntax, a simple syntax
+that you can use to describe a graph in
+a text file.
 
-AGN is not concern with the
-semantics of the information
-describe in the document, only
-syntax.
+AGN is NOT concern with semantics in any
+shape or form, only syntax.
 
 ## An Aban Document
 

@@ -3,15 +3,29 @@
 
 ## [0] What is AGN
 
-AGN is a simple syntax that is basis for
-most of, if not all, aban languages.
+It is a basis for all languages
+under aban language family.
+
+It describes the syntax of most
+if not all aban languages.
+
+AGN is all about syntax, a simple syntax
+that you can use to describe a graph in
+a text file.
+
+AGN is NOT concern with semantics in any
+shape or form, only syntax.
 
 ## [1] Variations
 
 Aban languages, sometimes called
-'Variation', sometimes 'Editions'.
+'Variations', sometimes 'Editions'.
 
-These variations define semantics.
+AGN is the base syntax of most, if not
+all, aban languages.
+
+Variations define semantics for
+information presented in aban documents.
 
 ## [2] Documents
 
