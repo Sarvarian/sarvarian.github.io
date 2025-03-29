@@ -52,5 +52,43 @@ a new document in the same file.
 
 ## [3] Document Character Encoding Directive
 
+We are just going to call this one CED
+for short.
+
+CED tells the parser, what character
+encoding to use, and also the character
+set used from that encoding.
+
+for example, for a default 'abanascii'
+CED, the valid character set would be
+set of a-z, A-Z, 0-9, [], '', "", -, .,
+,, ;, /, \, new line, tab, and space
+characters. (If I'm not missed
+anything!) Any other character, even
+ASCII, would be invalid.
+
+CED should come right at the start of
+any document. At the first line, no
+space before it. Something like
+following example:
+
+```
+abanancii
+
+"this document has 'abanascii' CED"
+
+```
+
+Some examples of CED are: 'abanascii',
+'abanfa', and 'abanutf8'.
+
+CED and be omitted, and default CED
+should be assumed 'abanascii', but
+because UTF-8 is a superset of ASCII, so
+if a parser assume 'abanutf8' as
+default, there should not be a problem.
+
+
+
 
 
