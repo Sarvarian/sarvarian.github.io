@@ -3,14 +3,13 @@
 
 ## [0] What is AGN
 
-AGN is a generic set of rules,
-describing general syntax of most
+AGN is a generic syntax, used by most
 if not all aban family of languages.
 
-What AGN really do, is describing a
-graph inside a text file.
+What AGN is really doing, is describing
+a graph.
 
-Semantic of information represented
+Semantic of information presented
 is none of AGN concern.
 
 ## [2] Documents
