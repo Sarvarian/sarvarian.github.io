@@ -3,29 +3,15 @@
 
 ## [0] What is AGN
 
-It is a basis for all languages
-under aban language family.
+AGN is a generic set of rules,
+describing general syntax of most
+if not all aban family of languages.
 
-It describes the syntax of most
-if not all aban languages.
+What AGN really do, is describing a
+graph inside a text file.
 
-AGN is all about syntax, a simple syntax
-that you can use to describe a graph in
-a text file.
-
-AGN is NOT concern with semantics in any
-shape or form, only syntax.
-
-## [1] Variations
-
-Aban languages, sometimes called
-'Variations', sometimes 'Editions'.
-
-AGN is the base syntax of most, if not
-all, aban languages.
-
-Variations define semantics for
-information presented in aban documents.
+Semantic of information represented
+is none of AGN concern.
 
 ## [2] Documents
 
@@ -43,7 +29,7 @@ Directive, or CED for short.
 Second, Document Purpose Directive, or
 just the Purpose if context is clear.
 
-Third, the main content, that we  will
+Third, the main content, that we will
 talk about later.
 
 Forth, Document Terminator, that signals
@@ -79,14 +65,16 @@ abanancii
 
 ```
 
-Some examples of CED are: 'abanascii',
-'abanfa', and 'abanutf8'.
+Some examples of CED are:
+'abanascii', 'abanfa', and 'abanutf8'.
 
-CED and be omitted, and default CED
-should be assumed 'abanascii', but
-because UTF-8 is a superset of ASCII, so
-if a parser assume 'abanutf8' as
-default, there should not be a problem.
+CED can be omitted, and default CED
+should be assumed 'abanascii'.
+
+Because UTF-8 is a superset of ASCII,
+if parsers assume 'abanutf8' as default,
+there should not be any problem.
+
 
 
 
