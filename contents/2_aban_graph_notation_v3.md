@@ -74,6 +74,37 @@ Because UTF-8 is a superset of ASCII,
 if parsers assume 'abanutf8' as default,
 there should not be any problem.
 
+# Document Purpose Directive
+
+Purpose directive is just one line at
+the start of every aban document, at
+the start after CED if CED is not
+omitted.
+
+Purpose directive, can just be referred
+to as purpose, that is purpose of
+document, when context is clear.
+
+What purpose do is telling readers, like
+parsers, what semantic been used for
+that document.
+
+Some of the purposes are:
+'aban script', 'c module',
+'project description',
+'aban report document'.
+
+Unlike CED that should came right at
+the start of document, before purpose
+directive can come non-meaningful tokens
+like whitespaces or comments.
+
+
+
+
+
+
+
 
 
 
