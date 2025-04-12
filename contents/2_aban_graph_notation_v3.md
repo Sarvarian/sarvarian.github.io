@@ -101,6 +101,22 @@ the start of document, before purpose
 directive can come non-meaningful tokens
 like whitespaces or comments.
 
+Examples follows:
+
+```
+abanascii
+aban report document
+```
+
+Or
+
+```
+#! /usr/bin/aban
+aban script
+```
+
+# Document Terminator
+
 
 
 
