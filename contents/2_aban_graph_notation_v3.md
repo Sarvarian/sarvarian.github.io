@@ -7,7 +7,7 @@ AGN is a generic syntax, used by most
 if not all aban family of languages.
 
 What AGN is really doing is describing
-a graph.
+a graph in text format.
 
 Semantic of information presented
 is none of AGN concerns.
