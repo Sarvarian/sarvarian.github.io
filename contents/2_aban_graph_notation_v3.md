@@ -179,17 +179,13 @@ abanutf8
 
 ```
 
-New document limbo, or just limbo when
-context is clear, is the term we use to
-refer to the whitespace
-between a document terminator
-and the new document.
+For whitespace between a document
+terminator and new document, what
+constitutes whitespace and newline
+characters will be the same as what
+is defined by CED of the document prior
+to the document terminator.
 
-For the sake of having a shared standard, 
-in limbo, what constitutes whitespace
-and newline characters is the same as
-what is defined by CED of the document
-prior to the document terminator.
 
 
 
