@@ -179,7 +179,7 @@ abanutf8
 
 ```
 
-## [6] New Document Limbo
+## [6] Document Break Limbo
 
 As mentioned at the end of the previous 
 verse, for fault tolerance purpose,
@@ -197,7 +197,7 @@ encoding for whitespace and newline
 characters?
 
 We refer to this or these sections of
-aban files as new document limbo, or
+aban files as document break limbo, or
 just limbo when the context is clear.
 
 I like to say it is undefined and 
