@@ -208,9 +208,9 @@ standard, CED of the terminated
 document defines whitespace and newline
 encoding of limbo.
 
-Yet parsers are encouraged to do their
-best judgment; Bringing documents they
-are reading at the time of parsing
+Still, parsers are encouraged to do
+their best judgment; Bringing documents
+they are reading at the time of parsing
 into consideration.
 
 ## [7] Content
