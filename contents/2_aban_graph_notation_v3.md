@@ -242,7 +242,7 @@ subjects.
 
 ## [8] Node Form
 
-There are three ways to describe a node.
+There are three ways to describe nodes.
 
 We call these ways, node formatting,
 node format, or node form.
@@ -253,10 +253,9 @@ numeric form,
 string form.
 
 I will describe rules for these
-forms, in terms of abanascii;
-for other CEDs, please refer to their
-documentation.
-
+forms, in terms of abanascii.
+For other CEDs, please refer to
+their own documentations.
 
 
 ## Link Form
