@@ -117,6 +117,84 @@ aban script
 
 # Document Terminator
 
+Just like YAML, we can have multiple
+aban documents in one file using what
+is called a document terminator.
+
+In an aban document, three dots at
+the start of a line denote the end of
+the document, and allow for the start
+of a new document in the same file.
+
+Example follows:
+
+```
+
+'This is first document in this file.'
+
+...
+
+'This is second doucument in this file.'
+
+```
+
+Three dots of document terminator,
+signal the end of document.
+So, everything after it will be content
+of a new document.
+
+So technically CED of the new document
+should come right after three dots,
+something like the following example:
+
+```
+
+'First Document'
+
+...abanascii
+
+'Second Document'
+
+```
+
+But as a fault tolerance mechanism,
+the new document would not be started
+until the first non-whitespace
+character or newline.
+So, the following examples are also
+valid.
+
+```
+
+'First Document'
+
+... abanfa
+
+'Second Document'
+
+...
+abanutf8
+
+'Third Document'
+
+```
+
+New document limbo, or just limbo when
+context is clear, is the term we use to
+refer to the whitespace
+between a document terminator
+and the new document.
+
+For the sake of having a shared standard, 
+in limbo, what constitutes whitespace
+and newline characters is the same as
+what is defined by CED of the document
+prior to the document terminator.
+
+
+
+
+
 
 
 
