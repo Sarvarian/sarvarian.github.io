@@ -75,7 +75,7 @@ Because UTF-8 is a superset of ASCII,
 if parsers assume abanutf8, as default,
 there should not be any problem.
 
-# Document Purpose Directive
+## [4] Document Purpose Directive
 
 Purpose directive is just one line at
 the start of every aban document, at
@@ -115,7 +115,7 @@ Or
 aban script
 ```
 
-# Document Terminator
+## [5] Document Terminator
 
 Just like YAML, we may have multiple
 aban documents in one file using what
@@ -191,19 +191,7 @@ behavior, parsers may alter this
 in consideration of documents they are
 reading.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+## [6] Content
 
 
 
