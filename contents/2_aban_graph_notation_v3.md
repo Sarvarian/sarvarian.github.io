@@ -14,7 +14,7 @@ is none of AGN concerns.
 
 ## [2] Documents
 
-A computer text file can contain one or
+A computer text file may contain one or
 more aban documents.
 
 Each document possibly contains three
@@ -68,7 +68,7 @@ abanancii
 Some examples of CED are:
 'abanascii', 'abanfa', and 'abanutf8'.
 
-CED can be omitted, and default CED
+CED may be omitted, and default CED
 should be assumed abanascii.
 
 Because UTF-8 is a superset of ASCII,
@@ -83,9 +83,9 @@ the start after CED if CED is not
 omitted.
 
 When context is clear,
-purpose directive can just be referred
+purpose directive may just be referred
 to as purpose; that is the purpose of
-a document.
+the document.
 
 What purpose do is telling readers, like
 parsers, what semantic been used for
@@ -98,8 +98,8 @@ Some of example purposes are:
 
 Unlike CED that should come right at
 the start of document, before purpose
-directive can come non-meaningful tokens
-like whitespaces or comments.
+directive, may come non-meaningful
+tokens, like whitespaces or comments.
 
 Examples follows:
 
@@ -117,7 +117,7 @@ aban script
 
 # Document Terminator
 
-Just like YAML, we can have multiple
+Just like YAML, we may have multiple
 aban documents in one file using what
 is called a document terminator.
 
@@ -185,6 +185,13 @@ constitutes whitespace and newline
 characters will be the same as what
 is defined by CED of the document prior
 to the document terminator.
+
+This is just a default standard
+behavior, parsers may alter this
+in consideration of documents they are
+reading.
+
+
 
 
 
