@@ -215,6 +215,51 @@ into consideration.
 
 ## [7] Content
 
+About the main content.
+
+When it comes to AGN syntax,
+aban documents are composition of
+nodes and how they link to each other.
+
+In terms of graph theory, we can think
+of an aban document as a tree.
+
+Comparing graph theory to
+the terminology I will use:
+
+Vertices and nodes are interchangeable.
+
+Edges and links are interchangeable.
+
+Parent node, top node, and author node,
+are interchangeable.
+
+Child node, sub node, and subject node 
+are interchangeable.
+
+A node's domain is the set of its
+subjects.
+
+## [8] Node Form
+
+There are three ways to describe a node.
+
+We call these ways, node formatting,
+node format, or node form.
+
+These three forms are as follows:
+Token form,
+numeric form,
+string form.
+
+I will describe rules for these
+forms, in terms of abanascii;
+for other CEDs, please refer to their
+documentation.
+
+
+
+## Link Form
 
 
 
