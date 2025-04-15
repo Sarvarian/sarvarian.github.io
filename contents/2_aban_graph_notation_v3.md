@@ -179,19 +179,41 @@ abanutf8
 
 ```
 
-For whitespace between a document
-terminator and new document, what
-constitutes whitespace and newline
-characters will be the same as what
-is defined by CED of the document prior
-to the document terminator.
+## [6] New Document Limbo
 
-This is just a default standard
-behavior, parsers may alter this
-in consideration of documents they are
-reading.
+As mentioned at the end of the previous 
+verse, for fault tolerance purpose,
+after a document terminator may come
+some whitespace and a newline
+characters before the start of the new
+document.
 
-## [6] Content
+Now, this presents us with a problem.
+
+The Previous document is terminated and
+the new document is not started.
+So, what is CED to define character
+encoding for whitespace and newline
+characters?
+
+We refer to this or these sections of
+aban files as new document limbo, or
+just limbo when the context is clear.
+
+I like to say it is undefined and 
+depends on parsers to decide.
+
+But for the sake of having a common
+standard, CED of the terminated
+document defines whitespace and newline
+encoding of limbo.
+
+Yet parsers are encouraged to do their
+best judgment; Bringing documents they
+are reading at the time of parsing
+into consideration.
+
+## [7] Content
 
 
 
