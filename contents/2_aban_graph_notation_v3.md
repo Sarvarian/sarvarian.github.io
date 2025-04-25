@@ -12,6 +12,7 @@ a graph in text format.
 Semantic of information presented
 is none of AGN concerns.
 
+
 ## [2] Documents
 
 A computer text file may contain one or
@@ -34,6 +35,7 @@ talk about later.
 Forth, Document Terminator, that signals
 the end of a document and possibly start
 of a new document in the same file.
+
 
 ## [3] Document Character Encoding Directive
 
@@ -75,6 +77,7 @@ Because UTF-8 is a superset of ASCII,
 if parsers assume abanutf8, as default,
 there should not be any problem.
 
+
 ## [4] Document Purpose Directive
 
 Purpose directive is just one line at
@@ -114,6 +117,7 @@ Or
 #! /usr/bin/aban
 aban script
 ```
+
 
 ## [5] Document Terminator
 
@@ -179,6 +183,7 @@ abanutf8
 
 ```
 
+
 ## [6] Document Break Limbo
 
 As mentioned at the end of the previous 
@@ -213,6 +218,7 @@ their best judgment; Bringing documents,
 they are reading at the time of parsing,
 into consideration.
 
+
 ## [7] Content
 
 About the main content.
@@ -240,22 +246,23 @@ child node or sub node.
 I will refer to a set of subjects of a
 node to as its domain.
 
+
 ## [8] Node Form
 
-There are three ways to describe nodes.
-
-We call these ways, node formatting,
-node format, or node form.
+There are three ways to describe a
+node in AGN; We call these forms.
 
 These three forms are as follows:
-Token form,
-numeric form,
-string form.
+Token form, numeric form, string form.
 
-I will describe rules for these
-forms, in terms of abanascii.
-For other CEDs, please refer to
-their own documentations.
+I describe these forms as for abanascii.
+For other CEDs, please refer to their
+documentation to see how nodes are
+formatted.
+
+
+## [9] Token Node Form
+
 
 
 ## Link Form
