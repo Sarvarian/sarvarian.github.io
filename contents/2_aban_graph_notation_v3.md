@@ -209,8 +209,8 @@ document defines whitespace and newline
 encoding of limbo.
 
 Still, parsers are encouraged to do
-their best judgment; Bringing documents
-they are reading at the time of parsing
+their best judgment; Bringing documents,
+they are reading at the time of parsing,
 into consideration.
 
 ## [7] Content
@@ -224,21 +224,21 @@ nodes and how they link to each other.
 In terms of graph theory, we can think
 of an aban document as a tree.
 
-Comparing graph theory to
-the terminology I will use:
+Comparing to graph theory, I will use
+these terminologies:
 
-Vertices and nodes are interchangeable.
+I will use nodes as opposed to vertices.
 
-Edges and links are interchangeable.
+I will use links as opposed to edges.
 
-Parent node, top node, and author node,
-are interchangeable.
+I will use author node as opposed to
+parent node or top node.
 
-Child node, sub node, and subject node 
-are interchangeable.
+I will use subject node as opposed to
+child node or sub node.
 
-A node's domain is the set of its
-subjects.
+I will refer to a set of subjects of a
+node to as its domain.
 
 ## [8] Node Form
 
