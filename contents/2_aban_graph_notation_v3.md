@@ -183,9 +183,9 @@ abanutf8
 
 As mentioned at the end of the previous 
 verse, for fault tolerance purpose,
-after a document terminator may come
-some whitespace and a newline
-characters before the start of the new
+after a document terminator, may come
+some whitespace characters and a newline
+character, before the start of the new
 document.
 
 Now, this presents us with a problem.
