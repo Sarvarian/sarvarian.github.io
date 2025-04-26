@@ -263,6 +263,90 @@ formatted.
 
 ## [9] Token Node Form
 
+Tokens are strings of ASCII characters
+limited to: lowercase and uppercase
+a to z letters, one to nine number
+characters, underline character,
+dash character, and finally 
+period character.
+
+```
+  a-z  A-Z  0-9  _  -  .
+```
+
+First note that tokens should not start
+with numbers or dash character.
+
+Second note that any space character in
+the middle of a token will break it
+and allow for the start of a new node.
+
+
+## [10] Numeric Node Form
+
+Numeric nodes are exactly like tokens,
+but they should start with numbers.
+
+
+## [11] String Node Form
+
+Any consecutive amount of not mixed
+single quotation mark or double
+quotation marks will start a string node.
+
+Reading of a string node shall end
+when parser reached the same number of
+the same quotation mark characters as
+it is started it.
+
+The content inside a string node shall
+be of any kind and encoding and
+formatting, even binary.
+String nodes are provided as strings of
+bytes or buffers of data from parsers
+to applications.
+
+There are three escape sequences.
+Parsers, reading string node shall
+substitute these sequences before
+providing them to applications.
+
+Escape sequences are: double forward
+slash, forward slash single quotation
+mark, and forward slash double
+quotation mark.
+
+```
+  \\  \'  \"
+```
+
+Double forward slash shall be replaced
+by just a slash character.
+
+```
+  \\    \
+```
+
+Forward slash single quotation mark
+shall be replaced by just a quotation
+mark character.
+
+```
+  \'    '
+```
+
+Forward slash double quotation mark
+shall be replaced by just a double
+quotation mark character.
+
+```
+  \"    "
+```
+
+These escape sequences are just
+a standard behavior.
+Parsers considering semantic of
+an application may alter this behavior.
 
 
 ## Link Form
