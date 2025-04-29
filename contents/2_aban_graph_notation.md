@@ -247,7 +247,7 @@ I will refer to a set of subjects of a
 node to as its domain.
 
 
-## [8] Node Form
+## [8] Node Forms
 
 There are three ways to describe a
 node in AGN; We call these forms.
@@ -348,8 +348,69 @@ a standard behavior.
 Parsers considering semantic of
 an application may alter this behavior.
 
+## [12] Annotated String
 
-## Link Form
+String forms can be annotated.
+By prefixing them with a token form,
+right before their starting quotation
+mark.
+
+Note that there should not be any space
+between annotation and start quotation
+mark.
+
+Example:
+
+```
+myAnnotaiton'My string content'
+```
+
+
+## [13] Link Forms
+
+There are three ways to link nodes
+in AGN; We call these link forms.
+
+These three link forms are as follows:
+Space form, bracket form,
+comma and semicolon form.
+
+I describe these forms as for abanascii.
+For other CEDs, please refer to their
+documentation to see what are their
+alternatives to these link forms.
+
+
+## [14] Space Link Form
+
+
+
+
+## Bracket Link Form
+
+
+## Comma and Semicolon Link Form
+
+
+## Some General Formatting Guidelines
+
+Have at least one empty line at the
+start and at the end of any aban
+document.
+Except for CED, that is better to come
+right at the start of the document.
+
+........................................
+
+
+
+
+
+
+
+
+
+
 
 
 
