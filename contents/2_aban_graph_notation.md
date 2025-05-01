@@ -392,6 +392,26 @@ alternatives to these link forms.
 ## Comma and Semicolon Link Form
 
 
+## Comment
+
+```
+#
+--
+[-
+-]
+[-]
+--]
+[-
+```
+
+## Reserved for Extensions
+
+```
+()
+{}
+```
+
+
 ## Some General Formatting Guidelines
 
 Have at least one empty line at the
