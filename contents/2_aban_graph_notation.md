@@ -55,7 +55,7 @@ anything).
 Any other character, even
 ASCII, would be invalid.
 
-CED should come right at the start of
+CED shall come right at the start of
 any document. At the first line, no
 space before it. Something like
 the following example:
@@ -71,11 +71,11 @@ Some examples of CED are:
 'abanascii', 'abanfa', and 'abanutf8'.
 
 CED may be omitted, and default CED
-should be assumed abanascii.
+shall be assumed abanascii.
 
 Because UTF-8 is a superset of ASCII,
 if parsers assume abanutf8, as default,
-there should not be any problem.
+there shall not be any problem.
 
 
 ## [4] Document Purpose Directive
@@ -99,7 +99,7 @@ Some of example purposes are:
 'project description',
 'aban report document'.
 
-Unlike CED that should come right at
+Unlike CED that shall come right at
 the start of document, before purpose
 directive, may come non-meaningful
 tokens, like whitespaces or comments.
@@ -148,7 +148,7 @@ So, everything after it will be content
 of a new document.
 
 So technically CED of the new document
-should come right after three dots,
+shall come right after three dots,
 something like the following example:
 
 ```
@@ -227,7 +227,7 @@ When it comes to AGN syntax,
 aban documents are composition of
 nodes and how they link to each other.
 
-In terms of graph theory, we can think
+In terms of graph theory, we may think
 of an aban document as a tree.
 
 Comparing to graph theory, I will use
@@ -310,21 +310,29 @@ BNF for tokens is as follows:
 
 ## [10] Numeric Node Form
 
+
+Numeric nodes are exactly like tokens
+except how they start.
+
+They 
+
+----------------------------------------
+
 Numeric nodes are exactly like tokens
 with the following exceptions.
 
-Numeric nodes should only start with
+Numeric nodes shall only start with
 number characters.
 
 Numeric nodes may start with one dash
 character.
 
 Numeric nodes that start with dash
-character should start with only one
+character shall start with only one
 dash character.
 
 Numeric nodes that start with dash right
-after their initial dash should follow
+after their initial dash shall follow
 a number character.
 
 Numeric nodes may start with period
@@ -334,19 +342,19 @@ Numeric nodes may start with consecutive
 period characters.
 
 Numeric nodes that start with period
-characters should have number character
+characters shall have number character
 or one dash character after initial
 period characters.
 
 Numeric nodes that start with period
 characters and then dash character
-should not have more than one dash
+shall not have more than one dash
 character right after their initial
 period characters.
 
 Numeric nodes that start with period
 characters and then a dash character
-should continue with a number character
+shall continue with a number character
 right after their initial period
 characters and one dash character.
 
@@ -430,12 +438,12 @@ an application may alter this behavior.
 
 ## [12] Annotated String
 
-String forms can be annotated.
+String forms may be annotated.
 By prefixing them with a token form,
 right before their starting quotation
 mark.
 
-Note that there should not be any space
+Note that there shall not be any space
 between annotation and start quotation
 mark.
 
