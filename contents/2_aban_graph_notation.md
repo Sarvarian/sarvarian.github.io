@@ -275,8 +275,7 @@ period character.
 ```
 
 First note that tokens should not start
-with numbers or dash character, and not
-end with dash or period character.
+with numbers or dash character.
 
 Second note that any space character in
 the middle of a token will break it
