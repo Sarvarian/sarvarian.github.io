@@ -255,6 +255,11 @@ node in AGN; We call these forms.
 These three forms are as follows:
 Token form, numeric form, string form.
 
+Token form and numeric form are very
+similar, and how we recognize them from
+each other is to watch for how they
+start.
+
 I describe these forms as for abanascii.
 For other CEDs, please refer to their
 documentation to see how nodes are
