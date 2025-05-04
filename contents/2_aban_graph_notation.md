@@ -343,9 +343,9 @@ BNF for numeric nodes is as follows:
                  |   "." <NumericStart>
 
 <Numeric>       ::=  <NumericStart>
-                 |   <Numeric> [0-9]
                  |   <Numeric> [a-z]
                  |   <Numeric> [A-Z]
+                 |   <Numeric> [0-9]
                  |   <Numeric> "_"
                  |   <Numeric> "-"
                  |   <Numeric> "."
