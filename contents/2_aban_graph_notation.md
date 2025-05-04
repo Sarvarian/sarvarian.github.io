@@ -310,53 +310,25 @@ BNF for tokens is as follows:
 
 ## [10] Numeric Node Form
 
-
 Numeric nodes are exactly like tokens
 except how they start.
 
-They 
+They shall start with number character
+or dash character or period character.
 
-----------------------------------------
+If start with dash character, there
+shall be only one dash character
+followed by number character.
 
-Numeric nodes are exactly like tokens
-with the following exceptions.
+If start with period character, there
+may be any number of consecutive period
+characters, followed by number character
+or dash character.
 
-Numeric nodes shall only start with
-number characters.
-
-Numeric nodes may start with one dash
+If start with period characters followed
+by dash character, there shall be only
+one dash character followed by number
 character.
-
-Numeric nodes that start with dash
-character shall start with only one
-dash character.
-
-Numeric nodes that start with dash right
-after their initial dash shall follow
-a number character.
-
-Numeric nodes may start with period
-characters.
-
-Numeric nodes may start with consecutive
-period characters.
-
-Numeric nodes that start with period
-characters shall have number character
-or one dash character after initial
-period characters.
-
-Numeric nodes that start with period
-characters and then dash character
-shall not have more than one dash
-character right after their initial
-period characters.
-
-Numeric nodes that start with period
-characters and then a dash character
-shall continue with a number character
-right after their initial period
-characters and one dash character.
 
 BNF for numeric nodes is as follows:
 
