@@ -320,14 +320,35 @@ Numeric nodes may start with one dash
 character.
 
 Numeric nodes that start with dash
-character should only start with one 
+character should start with only one
+dash character.
 
+Numeric nodes that start with dash right
+after their initial dash should follow
+a number character.
 
-----------------------------------------
+Numeric nodes may start with period
+characters.
 
-Numeric nodes are exactly like tokens,
-but they should start with numbers.
+Numeric nodes may start with consecutive
+period characters.
 
+Numeric nodes that start with period
+characters should have number character
+or one dash character after initial
+period characters.
+
+Numeric nodes that start with period
+characters and then dash character
+should not have more than one dash
+character right after their initial
+period characters.
+
+Numeric nodes that start with period
+characters and then a dash character
+should continue with a number character
+right after their initial period
+characters and one dash character.
 
 BNF for numeric nodes is as follows:
 
