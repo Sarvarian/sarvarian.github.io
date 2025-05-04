@@ -284,20 +284,19 @@ and allow for the start of a new node.
 BNF for tokens are as follow:
 
 ```
-<Lowercase>  ::=  [a-z]
-<Uppercase>  ::=  [A-Z]
-<Number>     ::=  [0-9]
-<Underline>  ::=  "_"
-<Dashline>   ::=  "-"
-<Period>     ::=  "."
+<TokenStart>  ::=  [a-z]
+               |   [A-Z]
+               |   "_"
+               |   "." <TokenStart>
 
-<Token>      ::=  <Lowercase>
-              |   <Uppercase>
-              |   <Underline>
-              |   <Token> <Number>
-              |   <Token> <Dashline> <Token>
-              |   <Period> <Token>
-              |   <Token> <Token>
+<Token>       ::=  <TokenStart>
+               |   <Token> [a-z]
+               |   <Token> [A-Z]
+               |   <Token> [0-9]
+               |   <Token> "_"
+               |   <Token> "-"
+               |   <Token> "."
+               |   <Token> <Token>
 ```
 
 
