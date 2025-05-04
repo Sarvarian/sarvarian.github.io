@@ -274,14 +274,22 @@ period character.
   a-z  A-Z  0-9  _  -  .
 ```
 
-First note that tokens should not start
-with numbers or dash character.
+Any space in the middle of a token will
+break it and allow for the start of
+a new node.
 
-Second note that any space character in
-the middle of a token will break it
-and allow for the start of a new node.
+Tokens are not allowed to start with
+number or dash characters.
 
-BNF for tokens are as follow:
+Tokens that start with period are also
+not allowed to have number or dash
+characters right after their initial
+period characters.
+
+Tokens may start with consecutive period
+characters.
+
+BNF for tokens is as follows:
 
 ```
 <TokenStart>  ::=  [a-z]
@@ -302,8 +310,41 @@ BNF for tokens are as follow:
 
 ## [10] Numeric Node Form
 
+Numeric nodes are exactly like tokens
+with the following exceptions.
+
+Numeric nodes should only start with
+number characters.
+
+Numeric nodes may start with one dash
+character.
+
+Numeric nodes that start with dash
+character should only start with one 
+
+
+----------------------------------------
+
 Numeric nodes are exactly like tokens,
 but they should start with numbers.
+
+
+BNF for numeric nodes is as follows:
+
+```
+<NumericStart>  ::=  [0-9]
+                 |   "-" [0-9]
+                 |   "." <NumericStart>
+
+<Numeric>       ::=  <NumericStart>
+                 |   <Numeric> [0-9]
+                 |   <Numeric> [a-z]
+                 |   <Numeric> [A-Z]
+                 |   <Numeric> "_"
+                 |   <Numeric> "-"
+                 |   <Numeric> "."
+                 |   <Numeric> <Numeric>
+```
 
 
 ## [11] String Node Form
