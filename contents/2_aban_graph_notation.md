@@ -275,11 +275,31 @@ period character.
 ```
 
 First note that tokens should not start
-with numbers or dash character.
+with numbers or dash character, and not
+end with dash or period character.
 
 Second note that any space character in
 the middle of a token will break it
 and allow for the start of a new node.
+
+BNF for tokens are as follow:
+
+```
+<Lowercase>  ::=  [a-z]
+<Uppercase>  ::=  [A-Z]
+<Number>     ::=  [0-9]
+<Underline>  ::=  "_"
+<Dashline>   ::=  "-"
+<Period>     ::=  "."
+
+<Token>      ::=  <Lowercase>
+              |   <Uppercase>
+              |   <Underline>
+              |   <Token> <Number>
+              |   <Token> <Dashline> <Token>
+              |   <Period> <Token>
+              |   <Token> <Token>
+```
 
 
 ## [10] Numeric Node Form
@@ -382,6 +402,50 @@ alternatives to these link forms.
 
 
 ## [14] Space Link Form
+
+
+Space link form has three constructs,
+as following:
+
+Space that is just simple ASCII space
+character.
+
+Tab that is just simple ASCII tab
+character.
+
+```
+<Space>   ::=  0x20
+<Tab>     ::=  0x9
+<Newline> ::=  0xA
+           |   0xD 0xA
+           |   0xD
+```
+
+Consecutive space characters are counted
+as one space.
+
+Unlike space, consecutive tabs have
+significant.
+Consecutive tabs are counted and their
+count is stored as their indent level.
+
+----------------------------------------
+
+There are three constructs that we need
+to talk about.
+Space, tab, and newline characters.
+
+Space is just 
+
+Newline characters are any of the following
+ASCII pattern, in order of significant:
+
+```
+\n     0xA
+\n\r   0xD 0xA
+\r     0xD
+```
+
 
 
 
