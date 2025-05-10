@@ -286,13 +286,18 @@ a new node.
 Tokens are not allowed to start with
 number or dash characters.
 
+Tokens may start with consecutive period
+characters.
+
 Tokens that start with period are also
 not allowed to have number or dash
 characters right after their initial
 period characters.
 
-Tokens may start with consecutive period
-characters.
+A special kind of token is period
+character alone.
+One or multiple consecutive period
+characters without any other characters.
 
 BNF for tokens is as follows:
 
@@ -300,6 +305,7 @@ BNF for tokens is as follows:
 <TokenStart>  ::=  [a-z]
                |   [A-Z]
                |   "_"
+               |   "."
                |   "." <TokenStart>
 
 <Token>       ::=  <TokenStart>
@@ -532,6 +538,24 @@ right at the start of the document.
 ........................................
 
 
+## Formal Grammar
+
+```
+Terminals
+	a b c d e f g h i j k l m
+	n o p q r s t u v w x y z
+	A B C D E F G H I J K L M
+	N O P Q R S T U V W X Y Z
+	0 1 2 3 4 5 6 7 8 9
+	. _ - [ ] ' " / \
+	\n \r \t space
+
+Terminals Resurved for Extentions
+	? ! @ # $ % ^ &
+	* + = | ` ~ : ;
+	( ) { } < >
+	
+```
 
 
 
