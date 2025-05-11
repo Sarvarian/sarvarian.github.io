@@ -270,10 +270,10 @@ formatted.
 
 Tokens are strings of ASCII characters
 limited to: lowercase and uppercase
-a to z letters, one to nine number
-characters, underline character,
-dash character, and finally 
-period character.
+a to and z letters, zero to and nine
+numeral digits, underline character,
+dash character, and finally period
+character.
 
 ```
   a-z  A-Z  0-9  _  -  .
@@ -284,13 +284,13 @@ break it and allow for the start of
 a new node.
 
 Tokens are not allowed to start with
-number or dash characters.
+numerals or dash characters.
 
 Tokens may start with consecutive period
 characters.
 
 Tokens that start with period are also
-not allowed to have number or dash
+not allowed to have numerals or dash
 characters right after their initial
 period characters.
 
@@ -324,24 +324,22 @@ BNF for tokens is as follows:
 Numeric nodes are exactly like tokens
 except how they start.
 
-They shall start with number character
-or dash character or period character.
+They shall start with numeral digits or
+dash character or period character.
 
 If start with dash character, there
 shall be only one dash character
-followed by number character.
+followed by numeral digits.
 
 If start with period character, there
 may be any number of consecutive period
-characters, followed by number character
+characters, followed by numeral digits
 or dash character.
 
 If start with period characters followed
 by dash character, there shall be only
-one dash character followed by number
-character.
-
-BNF for numeric nodes is as follows:
+one dash character followed by numeral
+digits for numeric nodes is as follows:
 
 ```
 <NumericStart>  ::=  [0-9]
